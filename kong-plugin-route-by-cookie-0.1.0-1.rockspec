@@ -1,11 +1,12 @@
 package = "kong-plugin-route-by-cookie"
 version = "0.1.0-1"
 source = {
-   url = "*** please add URL for source tarball, zip or repository here ***"
+   url = "git://github.com/redhoyasa/kong-plugin-route-by-cookie.git"
 }
 description = {
-   homepage = "*** please enter a project homepage ***",
-   license = "*** please specify a license ***"
+   summary = "This kong plugin allows you to dynamically change upstream url based on cookies.",
+   homepage = "https://github.com/redhoyasa/kong-plugin-route-by-cookie",
+   license = "MIT"
 }
 build = {
    type = "builtin",
