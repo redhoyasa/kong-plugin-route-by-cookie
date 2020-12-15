@@ -35,7 +35,9 @@ curl -X POST http://kong:8001/routes/{route_id}/plugins \
 
 ## Supported Kong Releases
 
-Kong >= 0.14.1
+Kong >= 2.0
+
+Should work with 1.X but not tested
 
 ## Installation
 
