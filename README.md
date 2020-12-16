@@ -45,6 +45,21 @@ Should work with 1.X but not tested
 luarocks install kong-plugin-route-by-cookie
 ```
 
+## Tests
+
+You need [Pongo](https://github.com/Kong/kong-pongo) to run the tests.
+
+```
+pongo run
+```
+Expected output:
+```
+Kong version: 2.2.0
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+49 successes / 0 failures / 0 errors / 0 pending : 5.379104 seconds
+```
+
 ## Maintainers
 
 [redhoyasa](https://github.com/redhoyasa)
+[utix](https://github.com/utix)
