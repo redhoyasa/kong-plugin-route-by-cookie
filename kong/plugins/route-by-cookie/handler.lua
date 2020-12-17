@@ -12,7 +12,7 @@ function plugin:access(config)
   local cookie_val = ck:get(config.cookie_name)
 
   if cookie_val and cookie_val == config.cookie_val then
-    kong.log.debug("changing upstream to" .. config.target_upstream)
+    kong.log.debug("changing upstream to " .. config.target_upstream)
     kong.service.set_upstream(config.target_upstream)
   end
 end
