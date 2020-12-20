@@ -1,8 +1,18 @@
+local typedefs = require "kong.db.schema.typedefs"
+
+local plugin_name = ({...})[1]:match("^kong%.plugins%.([^%.]+)")
+
 return {
-  no_consumer = true,
+  name = plugin_name,
   fields = {
-    cookie_name = {type = "string", required = true},
-    cookie_val = {type = "string", required = true},
-    target_upstream = {type = "string", required = true}
-  }
+    { consumer = typedefs.no_consumer },
+    { config = {
+      type = "record",
+      fields = {
+        { cookie_name = { type = "string", required = true }, },
+        { cookie_val = { type = "string", required = true }, },
+        { target_upstream = { type = "string", required = true }, },
+      },
+    }, },
+  },
 }

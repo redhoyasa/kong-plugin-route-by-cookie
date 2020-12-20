@@ -35,7 +35,9 @@ curl -X POST http://kong:8001/routes/{route_id}/plugins \
 
 ## Supported Kong Releases
 
-Kong >= 0.14.1
+Kong >= 2.0
+
+Should work with 1.X but not tested
 
 ## Installation
 
@@ -43,6 +45,21 @@ Kong >= 0.14.1
 luarocks install kong-plugin-route-by-cookie
 ```
 
+## Tests
+
+You need [Pongo](https://github.com/Kong/kong-pongo) to run the tests.
+
+```
+pongo run
+```
+Expected output:
+```
+Kong version: 2.2.0
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+49 successes / 0 failures / 0 errors / 0 pending : 5.379104 seconds
+```
+
 ## Maintainers
 
 [redhoyasa](https://github.com/redhoyasa)
+[utix](https://github.com/utix)
